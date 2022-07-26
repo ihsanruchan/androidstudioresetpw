@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/activity_hesap2_scene"
+    tools:context=".resetpw2">
+
+
+    <TextView
+        android:id="@+id/resetpwtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Şifremi Unuttum"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:id="@+id/resetpwmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="E-mail adresinizi girin."
+        android:inputType="textEmailAddress"
+        android:textSize="24dp" />
+
+        <Button
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:id="@+id/resetpwreset"
+            android:layout_marginTop="40dp"
+            android:text="ŞİFREMİ SIFIRLA"
+            android:textSize="26dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetpwhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_baseline_home_24"
+        android:backgroundTint="@color/purple_200"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</LinearLayout>
